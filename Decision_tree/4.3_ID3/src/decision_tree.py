@@ -24,6 +24,7 @@ class Node(object):
         self.attr_down = attr_down_init 
     
 ''' 
+递归实现决策树的划分代码
 Branching for decision tree using recursion 
  
 @param df: the pandas dataframe of the data_set
@@ -35,6 +36,7 @@ def TreeGenerate(df):
     label_arr = df[df.columns[-1]]
     
     label_count = NodeLabel(label_arr)
+	
     if label_count:  # assert the label_count isn's empty
         new_node.label= max(label_count, key=label_count.get) 
             

@@ -109,7 +109,7 @@ dataSet, labels = creatDataSet()
 # print(dataSet,labels)
 
 shannonEnt = calcShannonEnt(dataSet)
-print(shannonEnt)
+print(shannonEnt)   # 求经验熵H(D)
 
 bestfeature = choosebestFeaturnToSplit(dataSet)
 print(bestfeature)

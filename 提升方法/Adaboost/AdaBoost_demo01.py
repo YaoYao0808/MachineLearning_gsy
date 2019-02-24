@@ -1,3 +1,7 @@
+"""
+function:此demo实现了AdaBoost和提升树的算法
+author:gsy
+"""
 import numpy as np
 
 class SingleDecisionTree:   #决策树桩
